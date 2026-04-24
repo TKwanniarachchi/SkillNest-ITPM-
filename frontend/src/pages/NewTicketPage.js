@@ -56,7 +56,7 @@ export default function NewTicketPage() {
 
   return (
     <Layout>
-      <div className="breadcrumb">Dashboard &gt; <span>Tickets</span> &gt; New Request</div>
+      <div className="breadcrumb">Dashboard &gt; <span>Support Tickets</span> &gt; New Request</div>
       <div style={{ marginBottom: '1.5rem' }}>
         <h1 style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--primary)' }}>🎫 Request Help</h1>
         <p style={{ color: 'var(--text-light)', fontSize: '0.85rem' }}>
