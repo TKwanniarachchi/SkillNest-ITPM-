@@ -24,7 +24,7 @@ export default function TicketsPage() {
 
   return (
     <Layout>
-      <div className="breadcrumb">Dashboard &gt; <span>Support Tickets</span></div>
+      <div className="breadcrumb">Dashboard &gt; <span>MY Support Tickets</span></div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
         <div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--primary)' }}>🎫 Support Tickets</h1>
@@ -54,7 +54,7 @@ export default function TicketsPage() {
       ) : filtered.length === 0 ? (
         <div className="card" style={{ textAlign: 'center', padding: '3rem' }}>
           <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎫</div>
-          <h3 style={{ color: 'var(--text-light)' }}>No tickets found</h3>
+          <h3 style={{ color: 'var(--text-light)' }}>No ticket found create one Now</h3>
           {user?.role === 'student' && (
             <button className="btn btn-primary" style={{ marginTop: '1rem' }} onClick={() => navigate('/tickets/new')}>
               Submit Your First Request
