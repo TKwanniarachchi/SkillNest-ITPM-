@@ -32,7 +32,11 @@ export default function AdminUsersPage() {
       </div>
 
       <div className="stats-grid" style={{ marginBottom: '1.5rem' }}>
+<<<<<<< HEAD
         {['All', 'Student', 'Tutor', 'Admin'].map(role => (
+=======
+        {['all', 'student', 'tutor', 'admin'].map(role => (
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
           <div key={role} className="stat-card" style={{ cursor: 'pointer', borderLeftColor: filter === role ? 'var(--secondary)' : 'var(--border)' }}
             onClick={() => setFilter(role)}>
             <div className="stat-value">{role === 'all' ? users.length : users.filter(u => u.role === role).length}</div>
@@ -69,7 +73,11 @@ export default function AdminUsersPage() {
                       </div>
                     </td>
                     <td>
+<<<<<<< HEAD
                       <span className={`badge ${u.role === 'Admin' ? 'badge-red' : u.role === 'Tutor' ? 'badge-blue' : 'badge-green'}`}>
+=======
+                      <span className={`badge ${u.role === 'admin' ? 'badge-red' : u.role === 'tutor' ? 'badge-blue' : 'badge-green'}`}>
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
                         {u.role}
                       </span>
                     </td>
@@ -92,4 +100,7 @@ export default function AdminUsersPage() {
     </Layout>
   );
 }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a

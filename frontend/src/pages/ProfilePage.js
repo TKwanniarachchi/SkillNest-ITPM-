@@ -5,8 +5,12 @@ import Layout from '../components/shared/Layout';
 
 const DEGREES = ['BSc Computer Science', 'BSc Software Engineering', 'BSc Information Technology',
   'BSc Data Science', 'BSc Cybersecurity', 'BEng Computer Engineering', 'Other'];
+<<<<<<< HEAD
 const SEMESTERS = ['Semester 1', 'Semester 2', 'Semester 3', 'Semester 4',
   'Semester 5', 'Semester 6', 'Semester 7', 'Semester 8'];
+=======
+const SEMESTERS = ['Semester 1', 'Semester 2'];
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
 const SKILL_NAMES = ['Programming', 'Data Analysis', 'Mathematics', 'Web Development',
   'Database Management', 'Networking', 'AI & Machine Learning', 'Problem Solving'];
 

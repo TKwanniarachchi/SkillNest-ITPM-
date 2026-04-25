@@ -14,7 +14,10 @@ export default function Dashboard() {
   useEffect(() => {
     axios.get('/api/tickets').then(r => setTickets(r.data)).catch(() => {});
     axios.get('/api/resources').then(r => setResources(r.data)).catch(() => {});
+HEAD
     if (user?.role === 'Admin') axios.get('/api/users').then(r => setUsers(r.data)).catch(() => {});
+    if (user?.role === 'admin') axios.get('/api/users').then(r => setUsers(r.data)).catch(() => {});
+
   }, [user]);
 
   const openTickets = tickets.filter(t => t.status === 'open').length;
@@ -60,9 +63,12 @@ export default function Dashboard() {
         )}
       </div>
 
-      <div className="grid-2" style={{ gap: '1.5rem' }}>
+      <div> className="grid-2" style={{ gap: '1.5rem' }}</div>
         {/* Profile Completion */}
+HEAD
         <div className="card">
+        {/*<div className="card">
+
           <div className="card-title">📊 Profile Completion</div>
           <div style={{ marginBottom: '0.75rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem' }}>
@@ -79,6 +85,8 @@ export default function Dashboard() {
             </button>
           )}
         </div>
+ HEAD
+
 
         {/* Quick Actions */}
         <div className="card">

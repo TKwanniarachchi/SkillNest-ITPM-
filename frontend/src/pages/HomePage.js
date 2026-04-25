@@ -15,12 +15,58 @@ export default function HomePage() {
   }, []);
 
   const features = [
+<<<<<<< HEAD
     
   ];
 
   const stats = [
     
   ,
+=======
+    {
+      icon: '🎓',
+      title: 'Student Portal',
+      desc: 'Access courses, submit help tickets, and track your academic progress — all in one place.',
+      color: '#3b82f6',
+    },
+    {
+      icon: '👨‍🏫',
+      title: 'Tutor Connect',
+      desc: 'Get matched with expert tutors for peer help, quiz assistance, and assignment guidance.',
+      color: '#8b5cf6',
+    },
+    {
+      icon: '📚',
+      title: 'Resource Library',
+      desc: 'Discover, share, and download study materials with AI-powered summarisation built right in.',
+      color: '#06b6d4',
+    },
+    {
+      icon: '💬',
+      title: 'Real-Time Chat',
+      desc: 'Collaborate instantly with tutors via live ticket chat — no waiting, no delays.',
+      color: '#10b981',
+    },
+    {
+      icon: '📊',
+      title: 'Academic Tracking',
+      desc: 'Monitor your GPA, track semester progress, and identify skill strengths and gaps.',
+      color: '#f59e0b',
+    },
+    {
+      icon: '🛡️',
+      title: 'Admin Dashboard',
+      desc: 'Full management suite for resources, users, and platform health in one control centre.',
+      color: '#ef4444',
+    },
+  ];
+
+  const stats = [
+    { value: '500+', label: 'Active Students' },
+    { value: '50+', label: 'Expert Tutors' },
+    { value: '1,200+', label: 'Resources Shared' },
+    { value: '98%', label: 'Satisfaction Rate' },
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
   ];
 
   return (
@@ -530,8 +576,13 @@ export default function HomePage() {
           <div className="hp-hero-content">
             <span className="hp-badge">🎓 SLIIT Academic Platform</span>
             <h1>
+<<<<<<< HEAD
               SKILLNEST<br />
               <span className="highlight">Learning Platform</span>
+=======
+              Where Skills Are<br />
+              <span className="highlight">Nurtured & Grown</span>
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
             </h1>
             <p>
               SkillNest.lk connects students with expert tutors, rich study resources,
@@ -547,7 +598,13 @@ export default function HomePage() {
                   <button className="hp-btn-primary" onClick={() => navigate('/login')}>
                     Start Learning Today
                   </button>
+<<<<<<< HEAD
                   
+=======
+                  <button className="hp-btn-ghost" onClick={() => navigate('/login')}>
+                    I'm a Tutor
+                  </button>
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
                 </>
               )}
             </div>
@@ -555,12 +612,111 @@ export default function HomePage() {
         </section>
 
         {/* STATS */}
+<<<<<<< HEAD
        
 
         {/* ROLES */}
        
 
         
+=======
+        <div className="hp-stats">
+          {stats.map((s) => (
+            <div className="hp-stat" key={s.label}>
+              <div className="hp-stat-value">{s.value}</div>
+              <div className="hp-stat-label">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* FEATURES */}
+        <section className="hp-features">
+          <div className="hp-section-header">
+            <div className="hp-section-label">Platform Features</div>
+            <h2 className="hp-section-title">
+              Everything you need to<br /><span>excel academically</span>
+            </h2>
+            <p className="hp-section-sub">
+              A complete ecosystem built for students, tutors, and administrators
+              to collaborate, learn, and grow together.
+            </p>
+          </div>
+          <div className="hp-feature-grid">
+            {features.map((f) => (
+              <div className="hp-feature-card" key={f.title}>
+                <div
+                  className="hp-feature-icon-wrap"
+                  style={{ background: `${f.color}22`, border: `1px solid ${f.color}44` }}
+                >
+                  {f.icon}
+                </div>
+                <h3>{f.title}</h3>
+                <p>{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ROLES */}
+        <section className="hp-roles">
+          <div className="hp-roles-inner">
+            <div className="hp-section-header">
+              <div className="hp-section-label">Choose Your Path</div>
+              <h2 className="hp-section-title">Built for every role</h2>
+              <p className="hp-section-sub">
+                Whether you're here to learn, teach, or manage — SkillNest has a tailored experience for you.
+              </p>
+            </div>
+            <div className="hp-roles-grid">
+              <div className="hp-role-card student" onClick={() => navigate('/login')}>
+                <span className="hp-role-icon">🎓</span>
+                <h3>Student</h3>
+                <p>Access world-class resources and get help from expert tutors on demand.</p>
+                <ul className="hp-role-list">
+                  <li>Raise help tickets instantly</li>
+                  <li>Browse & bookmark resources</li>
+                  <li>Track your academic profile</li>
+                  <li>Chat with tutors in real time</li>
+                </ul>
+              </div>
+              <div className="hp-role-card tutor" onClick={() => navigate('/login')}>
+                <span className="hp-role-icon">👨‍🏫</span>
+                <h3>Tutor</h3>
+                <p>Support students, share expertise, and manage your teaching schedule.</p>
+                <ul className="hp-role-list">
+                  <li>Manage student tickets</li>
+                  <li>Upload study resources</li>
+                  <li>Set availability status</li>
+                  <li>Build your tutor profile</li>
+                </ul>
+              </div>
+              <div className="hp-role-card admin" onClick={() => navigate('/login')}>
+                <span className="hp-role-icon">🛡️</span>
+                <h3>Admin</h3>
+                <p>Oversee the entire platform with a comprehensive control dashboard.</p>
+                <ul className="hp-role-list">
+                  <li>Manage all users</li>
+                  <li>Approve / reject resources</li>
+                  <li>Monitor platform activity</li>
+                  <li>Full CRUD access</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="hp-cta">
+          <div className="hp-cta-bg" />
+          <div className="hp-cta-inner">
+            <h2>Ready to unlock your potential?</h2>
+            <p>Join hundreds of SLIIT students and tutors already using SkillNest to achieve more.</p>
+            <button className="hp-btn-primary" style={{ fontSize: '17px', padding: '16px 48px' }} onClick={() => navigate('/login')}>
+              Join SkillNest Today →
+            </button>
+          </div>
+        </section>
+>>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
 
         {/* FOOTER */}
         <footer className="hp-footer">
