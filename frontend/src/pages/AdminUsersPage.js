@@ -32,7 +32,7 @@ export default function AdminUsersPage() {
       </div>
 
       <div className="stats-grid" style={{ marginBottom: '1.5rem' }}>
-        {['all', 'student', 'tutor', 'admin'].map(role => (
+        {['All', 'Student', 'Tutor', 'Admin'].map(role => (
           <div key={role} className="stat-card" style={{ cursor: 'pointer', borderLeftColor: filter === role ? 'var(--secondary)' : 'var(--border)' }}
             onClick={() => setFilter(role)}>
             <div className="stat-value">{role === 'all' ? users.length : users.filter(u => u.role === role).length}</div>
@@ -69,7 +69,7 @@ export default function AdminUsersPage() {
                       </div>
                     </td>
                     <td>
-                      <span className={`badge ${u.role === 'admin' ? 'badge-red' : u.role === 'tutor' ? 'badge-blue' : 'badge-green'}`}>
+                      <span className={`badge ${u.role === 'Admin' ? 'badge-red' : u.role === 'Tutor' ? 'badge-blue' : 'badge-green'}`}>
                         {u.role}
                       </span>
                     </td>
@@ -92,3 +92,4 @@ export default function AdminUsersPage() {
     </Layout>
   );
 }
+  

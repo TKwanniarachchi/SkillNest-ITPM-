@@ -14,7 +14,7 @@ export default function Dashboard() {
   useEffect(() => {
     axios.get('/api/tickets').then(r => setTickets(r.data)).catch(() => {});
     axios.get('/api/resources').then(r => setResources(r.data)).catch(() => {});
-    if (user?.role === 'admin') axios.get('/api/users').then(r => setUsers(r.data)).catch(() => {});
+    if (user?.role === 'Admin') axios.get('/api/users').then(r => setUsers(r.data)).catch(() => {});
   }, [user]);
 
   const openTickets = tickets.filter(t => t.status === 'open').length;
