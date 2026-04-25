@@ -258,5 +258,5 @@ After running `node seed.js`:
 ## 👨‍💻 Team
 **WE_314_2.2 — SLIIT**
 - IT23617100 — S.S Pathiranage (Module 1: User Management)
-- IT23698918 — Lakshan W.A.K.T.K (Module 2: Peer Help & Ticketing)
+- IT23698918 — Lakshan W.A.K.T.K (Module 2: Peer Help and Ticketing)
 - IT23715110 — Yasintha W.K.M (Module 3: Study Resources)
