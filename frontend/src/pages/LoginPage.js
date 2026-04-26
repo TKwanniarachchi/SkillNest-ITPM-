@@ -42,7 +42,7 @@ export default function LoginPage() {
 
         alert(`${selectedRole.label} account created successfully ✅`);
         setMode('login');
-        setForm({ name: '', email: '', password: '' });
+        setForm({ name: '', email: '', Password: '' });
       } else {
         const data = await login(form.email, form.password);
 
@@ -449,7 +449,7 @@ export default function LoginPage() {
                     <input
                       className="form-control"
                       type="password"
-                      placeholder="Enter your password"
+                      placeholder="Enter your Password"
                       value={form.password}
                       onChange={(e) => setForm({ ...form, password: e.target.value })}
                       required
