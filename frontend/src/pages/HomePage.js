@@ -15,14 +15,6 @@ export default function HomePage() {
   }, []);
 
   const features = [
-<<<<<<< HEAD
-    
-  ];
-
-  const stats = [
-    
-  ,
-=======
     {
       icon: '🎓',
       title: 'Student Portal',
@@ -66,8 +58,8 @@ export default function HomePage() {
     { value: '50+', label: 'Expert Tutors' },
     { value: '1,200+', label: 'Resources Shared' },
     { value: '98%', label: 'Satisfaction Rate' },
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
   ];
+
 
   return (
     <>
@@ -576,13 +568,13 @@ export default function HomePage() {
           <div className="hp-hero-content">
             <span className="hp-badge">🎓 SLIIT Academic Platform</span>
             <h1>
-<<<<<<< HEAD
+          HEAD
               SKILLNEST<br />
               <span className="highlight">Learning Platform</span>
-=======
+
               Where Skills Are<br />
               <span className="highlight">Nurtured & Grown</span>
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
+
             </h1>
             <p>
               SkillNest.lk connects students with expert tutors, rich study resources,
@@ -598,13 +590,13 @@ export default function HomePage() {
                   <button className="hp-btn-primary" onClick={() => navigate('/login')}>
                     Start Learning Today
                   </button>
-<<<<<<< HEAD
+
                   
-=======
+
                   <button className="hp-btn-ghost" onClick={() => navigate('/login')}>
                     I'm a Tutor
                   </button>
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
+
                 </>
               )}
             </div>
@@ -612,14 +604,14 @@ export default function HomePage() {
         </section>
 
         {/* STATS */}
-<<<<<<< HEAD
+
        
 
         {/* ROLES */}
        
 
         
-=======
+
         <div className="hp-stats">
           {stats.map((s) => (
             <div className="hp-stat" key={s.label}>
@@ -716,7 +708,7 @@ export default function HomePage() {
             </button>
           </div>
         </section>
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
+
 
         {/* FOOTER */}
         <footer className="hp-footer">

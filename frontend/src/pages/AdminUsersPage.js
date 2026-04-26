@@ -32,19 +32,19 @@ export default function AdminUsersPage() {
       </div>
 
       <div className="stats-grid" style={{ marginBottom: '1.5rem' }}>
-<<<<<<< HEAD
-        {['All', 'Student', 'Tutor', 'Admin'].map(role => (
-=======
-        {['all', 'student', 'tutor', 'admin'].map(role => (
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
-          <div key={role} className="stat-card" style={{ cursor: 'pointer', borderLeftColor: filter === role ? 'var(--secondary)' : 'var(--border)' }}
-            onClick={() => setFilter(role)}>
-            <div className="stat-value">{role === 'all' ? users.length : users.filter(u => u.role === role).length}</div>
-            <div className="stat-label" style={{ textTransform: 'capitalize' }}>{role === 'all' ? 'Total Users' : `${role}s`}</div>
+        {[
+          { display: 'All', filter: 'all' },
+          { display: 'Student', filter: 'student' },
+          { display: 'Tutor', filter: 'tutor' },
+          { display: 'Admin', filter: 'admin' }
+        ].map(({ display, filter }) => (
+          <div key={filter} className="stat-card" style={{ cursor: 'pointer', borderLeftColor: filter === filter ? 'var(--secondary)' : 'var(--border)' }}
+            onClick={() => setFilter(filter)}>
+            <div className="stat-value">{filter === 'all' ? users.length : users.filter(u => u.role === filter).length}</div>
+            <div className="stat-label" style={{ textTransform: 'capitalize' }}>{display === 'All' ? 'Total Users' : `${display}s`}</div>
           </div>
         ))}
       </div>
-
       <div className="card">
         <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem' }}>
           <input className="form-control" placeholder="🔍 Search users..."
@@ -73,11 +73,7 @@ export default function AdminUsersPage() {
                       </div>
                     </td>
                     <td>
-<<<<<<< HEAD
-                      <span className={`badge ${u.role === 'Admin' ? 'badge-red' : u.role === 'Tutor' ? 'badge-blue' : 'badge-green'}`}>
-=======
                       <span className={`badge ${u.role === 'admin' ? 'badge-red' : u.role === 'tutor' ? 'badge-blue' : 'badge-green'}`}>
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
                         {u.role}
                       </span>
                     </td>
@@ -100,7 +96,5 @@ export default function AdminUsersPage() {
     </Layout>
   );
 }
-<<<<<<< HEAD
   
-=======
->>>>>>> 69621fc57461dc2cc24c467ff1e38c5ccd91d56a
+
