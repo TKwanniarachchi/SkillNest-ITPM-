@@ -15,7 +15,7 @@ export default function LoginPage() {
 
   const [selectedRole, setSelectedRole] = useState(null);
   const [mode, setMode] = useState('login');
-  const [form, setForm] = useState({ Name: '', Email: '', password: '' });
+  const [form, setForm] = useState({ Name: '', Email: '', Password: '' });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,7 @@ export default function LoginPage() {
     setSelectedRole(role);
     setMode('login');
     setError('');
-    setForm({ Name: '', Email: '', password: '' });
+    setForm({ Name: '', Email: '', Password: '' });
   };
 
   const handleSubmit = async (e) => {
