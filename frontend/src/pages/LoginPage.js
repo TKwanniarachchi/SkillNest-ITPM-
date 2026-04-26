@@ -23,7 +23,7 @@ export default function LoginPage() {
     setSelectedRole(role);
     setMode('login');
     setError('');
-    setForm({ name: '', email: '', password: '' });
+    setForm({ Name: '', Email: '', password: '' });
   };
 
   const handleSubmit = async (e) => {
