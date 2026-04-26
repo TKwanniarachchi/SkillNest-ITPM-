@@ -33,18 +33,7 @@ export default function HomePage() {
       desc: 'Discover, share, and download study materials with AI-powered summarisation built right in.',
       color: '#06b6d4',
     },
-    {
-      icon: '💬',
-      title: 'Real-Time Chat',
-      desc: 'Collaborate instantly with tutors via live ticket chat — no waiting, no delays.',
-      color: '#10b981',
-    },
-    {
-      icon: '📊',
-      title: 'Academic Tracking',
-      desc: 'Monitor your GPA, track semester progress, and identify skill strengths and gaps.',
-      color: '#f59e0b',
-    },
+   
     {
       icon: '🛡️',
       title: 'Admin Dashboard',
