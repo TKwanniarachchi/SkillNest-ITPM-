@@ -14,6 +14,7 @@ import ResourcesPage from './pages/ResourcesPage';
 import UploadResourcePage from './pages/UploadResourcePage';
 import AdminUsersPage from './pages/AdminUsersPage';
 import AdminResourcesPage from './pages/AdminResourcesPage';
+import BookmarkedResourcesPage from './pages/BookmarkedResourcesPage';
 
 function ProtectedRoute({ children, roles }) {
   const { user, loading } = useAuth();
@@ -38,6 +39,7 @@ function AppRoutes() {
       <Route path="/resources/upload" element={<ProtectedRoute roles={['tutor', 'admin']}><UploadResourcePage /></ProtectedRoute>} />
       <Route path="/admin/users" element={<ProtectedRoute roles={['admin']}><AdminUsersPage /></ProtectedRoute>} />
       <Route path="/admin/resources" element={<ProtectedRoute roles={['admin']}><AdminResourcesPage /></ProtectedRoute>} />
+      <Route path="/resources/bookmarks" element={<BookmarkedResourcesPage />} />
       <Route path="*" element={<Navigate to="/dashboard" />} />
     </Routes>
   );
