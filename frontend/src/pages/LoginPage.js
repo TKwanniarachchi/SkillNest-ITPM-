@@ -15,7 +15,7 @@ export default function LoginPage() {
 
   const [selectedRole, setSelectedRole] = useState(null);
   const [mode, setMode] = useState('login');
-  const [form, setForm] = useState({ Name: '', email: '', password: '' });
+  const [form, setForm] = useState({ Name: '', Email: '', password: '' });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
