@@ -36,7 +36,7 @@ export default function LoginPage() {
         await register({
           name: form.name,
           email: form.email,
-          password: form.password,
+          Password: form.password,
           role: selectedRole.key,
         });
 
